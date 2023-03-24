@@ -1,0 +1,101 @@
+.proyectos .container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.proyectos .container .box{
+  position: relative;
+  width: 320px;
+  height: 350px;
+  background: #f00;
+  margin: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos .container .box::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#00358d,#80ccff);
+}
+.proyectos .container .box::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#00358d,#80ccff);
+  filter: blur(30px);
+}
+.proyectos .container .box b{
+  position: absolute;
+  inset: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.proyectos .container .box img{
+  position: absolute;
+  z-index: 3;
+  scale: 0.25;
+  opacity: 0.25;
+  transition: 0.5s;
+}
+.proyectos .container .box:hover img{
+  scale: 0.2;
+  opacity: 0.9;
+  transform: translateY(-400px);
+}
+.proyectos .container .box .content{
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  transform: scale(0);
+}
+.proyectos .container .box:hover .content{
+  transform: scale(1);
+  bottom: 55px;
+}
+.proyectos .container .box h2{
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.proyectos .container .box h2 span{
+  font-weight: 300;
+  font-size: 0.75em;
+}
+.proyectos .container .box .sci{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8;
+  margin-top: 5px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+.proyectos .container .box .sci:hover{
+  color: rgba(255, 255, 255, 1);
+}

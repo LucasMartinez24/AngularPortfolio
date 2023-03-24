@@ -1,0 +1,48 @@
+.Skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1024px;
+  margin: 30px auto;
+}
+.Skills .container{
+  display: flex;
+  width: 290px;
+  padding: 50px 0;
+  border-radius: 8px;
+  background:#fff;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Skills .container .progreso_circular{
+  position: relative;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#00358d 3.6deg,#ededed 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Skills .container .progreso_circular::before{
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.Skills .container .progreso_circular .valor{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #00358d;
+}
+.Skills .container .texto{
+  font-size: 30px;
+  font-weight: 500;
+  color: #606060;
+}

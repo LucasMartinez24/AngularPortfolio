@@ -1,0 +1,52 @@
+.experiencia{
+  height: 350px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 25px;
+}
+.experiencia .datos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+}
+.experiencia .datos .img{
+  height: 260px;
+  width: 260px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 100%;
+  border: 8px solid #003b63;
+}
+.experiencia .datos .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.experiencia .datos .contenido{
+  padding: 0 20px 0 35px;
+  width: 530px;
+  margin-left: 50px;
+}
+.experiencia .datos .contenido span{
+  display: block;
+  color: #7b7992;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.experiencia .datos .contenido .titulo{
+  font-size: 30px;
+  font-weight: 700;
+  color:#0d0925;
+  margin-bottom: 20px;
+}
+.experiencia .datos .contenido .texto{
+  font-size: 19px;
+  color:#4e4a67;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  text-align: justify;
+}
