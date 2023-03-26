@@ -1,13 +1,19 @@
-import { Component } from '@angular/core';
-import { SkillsScriptService} from './../skills-script.service';
+import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from '../servicio/portfolio.service';
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent {
-  constructor(private skillsService: SkillsScriptService){
-    skillsService.skills(["main"])
+export class SkillsComponent implements OnInit{
+  skillList:any;
+  constructor(private datos:PortfolioService){
+
   }
-  numero:number = 50;
+  ngOnInit(): void {
+    this.datos.obtenerDatos().subscribe(data =>{
+      this.skillList=data.skills;
+    });
+  }
 }

@@ -1,0 +1,42 @@
+{
+  "nombre": "Lucas",
+  "apellido": "Martinez",
+  "titulo": "Tecnico en informatica",
+  "experiencia": [
+    {
+    "fecha": "2023-03-24",
+    "titulo": "Tecnico en informatica",
+    "info": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, officia est aliquam eaque tempora obcaecati quos veritatis velit ipsum nulla?"
+    },
+    {
+    "fecha": "2023-03-24",
+    "titulo": "Tecnico en informatica",
+    "info": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, officia est aliquam eaque tempora obcaecati quos veritatis velit ipsum nulla?"
+    }
+  ],
+  "educacion": {
+    "fecha": "2023-03-24T17:49:57.123Z",
+    "titulo": "Tecnico en informatica",
+    "info": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, officia est aliquam eaque tempora obcaecati quos veritatis velit ipsum nulla?"
+  },
+  "skills": [
+    {
+      "porcentaje": 100,
+      "titulo": "HTML & CSS"
+    },
+    {
+      "porcentaje": 80,
+      "titulo": "css"
+    }
+  ],
+  "portfolio": [
+    {
+      "titulo": "portfolio",
+      "guardado": "github"
+    },
+    {
+      "titulo": "portfolio2",
+      "guardado": "github"
+    }
+  ]
+}

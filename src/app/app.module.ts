@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// skills
-import { SkillsScriptService } from './skills-script.service';
-//skills fin
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
@@ -12,6 +11,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 import { EducacionComponent } from './educacion/educacion.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +23,14 @@ import { EducacionComponent } from './educacion/educacion.component';
     SkillsComponent,
     ProyectosComponent,
     FooterComponent,
-    EducacionComponent
+    EducacionComponent,
+    IniciarSesionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [SkillsScriptService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

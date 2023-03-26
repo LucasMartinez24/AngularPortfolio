@@ -2,34 +2,10 @@
   <div class="titulo-seccion">
     <h2>Skills</h2>
   </div>
-  <div class="container">
+  <div class="container" *ngFor="let skill of skillList">
     <div class="progreso_circular">
-      <span class="valor">0%</span>
+      <span class="valor">{{skill.porcentaje}}%</span>
     </div>
-    <span class="texto">HTML & CSS</span>
-  </div>
-  <div class="container">
-    <div class="progreso_circular">
-      <span class="valor">0%</span>
-    </div>
-    <span class="texto">HTML & CSS</span>
-  </div>
-  <div class="container">
-    <div class="progreso_circular">
-      <span class="valor">0%</span>
-    </div>
-    <span class="texto">HTML & CSS</span>
-  </div>
-  <div class="container">
-    <div class="progreso_circular">
-      <span class="valor">0%</span>
-    </div>
-    <span class="texto">HTML & CSS</span>
-  </div>
-  <div class="container">
-    <div class="progreso_circular">
-      <span class="valor">0%</span>
-    </div>
-    <span class="texto">HTML & CSS</span>
+    <span class="texto">{{skill.titulo}}</span>
   </div>
 </section>
