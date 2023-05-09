@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from '../servicio/portfolio.service';
+import { Persona } from '../clase/persona';
+import { PersonaService } from '../servicio/persona.service';
 
 @Component({
   selector: 'app-banner',
@@ -7,15 +8,15 @@ import { PortfolioService } from '../servicio/portfolio.service';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit{
-  miPortfolio:any;
-  constructor(private datos:PortfolioService){
+  persona: Persona = new Persona;
+  constructor(private datos:PersonaService){
 
   }
   ngOnInit(): void {
-    this.datos.obtenerDatos().subscribe(data =>{
-      console.log(data.nombre);
-      this.miPortfolio = data;
-    });
+    this.datos.get().subscribe(
+
+      e=>this.persona=e
+    );
   }
 
 }
